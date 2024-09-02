@@ -54,13 +54,14 @@ function MenuAdminListPage() {
                             return (
                         <tr key={index}>
                             <td>{dt.gubun}</td>
-                            <td><a href="#" onClick={(e)=>{
+                            <td><button onClick={(e)=>{
                                 e.preventDefault();
-                            }}>{dt.name}</a></td>
+                                navigate('/update')
+                            }}>{dt.name}</button></td>
                             <td>{dt.price}</td>
                             <td>{dt.sayong}</td>
                             <td></td>
-                        </tr>
+                        </tr> 
                         )
                         })}
                     </tbody>
